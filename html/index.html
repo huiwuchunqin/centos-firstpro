@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <title>Test Page for the Nginx HTTP Server on Fedora</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="/resources/js/jquery/jquery-3.1.1.min.js"></script>
+    <script src="/resources/js/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/js/bootstrap/css/bootstrap.css"/>
+    <style type="text/css">
+        /*<![CDATA[*/
+        body {
+            background-color: #fff;
+            color: #000;
+            font-size: 0.9em;
+            font-family: sans-serif, helvetica;
+            margin: 0;
+            padding: 0;
+        }
+
+        :link {
+            color: #c00;
+        }
+
+        :visited {
+            color: #c00;
+        }
+
+        a:hover {
+            color: #f50;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0;
+            padding: 0.6em 2em 0.4em;
+            background-color: #294172;
+            color: #fff;
+            font-weight: normal;
+            font-size: 1.75em;
+            border-bottom: 2px solid #000;
+        }
+
+        h1 strong {
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        h2 {
+            text-align: center;
+            background-color: #3C6EB4;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            padding: 0.5em;
+            border-bottom: 2px solid #294172;
+        }
+
+        hr {
+            display: none;
+        }
+
+        .content {
+            padding: 1em 5em;
+        }
+
+        img {
+            border: 2px solid #fff;
+            padding: 2px;
+            margin: 2px;
+            width: 500px;
+            height: 500px;
+        }
+
+        a:hover img {
+            border: 2px solid #294172;
+        }
+
+        p {
+            text-align: center;
+	   color:pink;
+font-size:31px;
+        }
+
+        .imgDiv {
+            width: 500px;
+            height: 500px;
+            margin: 0px auto;
+        }
+
+        /*]]>*/
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+    <p> to my lovely old driver ssl</p>
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="#">周二珂</a></li>
+        <li role="presentation"><a href="#">陈绮贞</a></li>
+        <li role="presentation"><a href="#">小郭郭</a></li>
+    </ul>
+<audio style="display:none" class="ad" controls="controls"  autoplay="autoplay" src="/media/keke.mp3"></audio>
+    <audio style="display:none" class="ad" controls="controls"  src="/media/cqz.mp3"></audio>
+    <audio style="display:none" class="ad" controls="controls" src="/media/hx.mp3"></audio>
+    <div class="tab" id="erke">
+    <div class="jumbotron">
+        <h1>可爱的二珂!</h1>
+    </div>
+
+    <div class="imgDiv">
+        <div id="myCarousel" class="carousel slide">
+
+            <!-- 轮播（Carousel）项目 -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="/imgs/1.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="/imgs/2.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="/imgs/3.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="/imgs/4.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                <img src="/imgs/5.jpg" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="/imgs/6.png" alt="First slide">
+                </div>
+                <div class="item">
+                    <img src="/imgs/7.jpg" alt="First slide">
+                </div>
+                
+               
+            </div>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="carousel-control left" href="#myCarousel"
+               data-slide="prev">&lsaquo;
+            </a>
+            <a class="carousel-control right" href="#myCarousel"
+               data-slide="next">&rsaquo;
+            </a>
+        </div>
+    </div>
+</div>
+
+    <div class="tab" style="display:none" id="fajie">
+        <div class="jumbotron">
+            <h1>才女陈绮贞!</h1>
+        </div>
+        <div class="imgDiv">
+            <div id="myCarousel2" class="carousel slide">
+
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/imgs/21.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/imgs/22.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/imgs/23.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/imgs/24.jpeg" alt="First slide">
+                    </div>
+
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel2"
+                   data-slide="prev">&lsaquo;
+                </a>
+                <a class="carousel-control right" href="#myCarousel2"
+                   data-slide="next">&rsaquo;
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="tab" style="display:none" id="guoguo">
+        <div class="jumbotron">
+            <h1>长大的小郭!</h1>
+        </div>
+        <div class="imgDiv">
+            <div id="myCarousel3" class="carousel slide">
+
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="/imgs/guo.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/imgs/guo1.jpg" alt="First slide">
+                    </div>
+                    <div class="item">
+                        <img src="/imgs/guo2.jpg" alt="First slide">
+                    </div>
+
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="carousel-control left" href="#myCarousel3"
+                   data-slide="prev">&lsaquo;
+                </a>
+                <a class="carousel-control right" href="#myCarousel3"
+                   data-slide="next">&rsaquo;
+                </a>
+            </div>
+
+    </div>
+    </div>
+
+</div>
+</div>
+</body>
+<script type="text/javascript">
+    $(".ad").each(function(){
+        $(this)[0].onended = function () {
+            audio.play();
+        }
+    })
+
+
+    $("li").click(function(){
+        var index=$(this).index();
+        $(this).addClass("active").siblings().each(function(){
+            $(this).removeClass("active");
+        })
+        $(".tab:eq("+index+")").siblings(".tab").each(function(){
+            $(this).hide()});
+        $(".tab:eq("+index+")").show();
+        $(".ad").each(function(){
+            var _index=$(this).index();
+            if(_index==index+2){
+                $(this)[0].play();
+            }else{
+                $(this)[0].pause();
+            }
+        })
+    })
+
+
+</script>
+</html>
